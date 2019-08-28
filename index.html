@@ -41,7 +41,9 @@
               <p style="text-align:center">
                 <a href="mailto:zhouxiaochen@wustl.edu">Email</a> &nbsp/&nbsp
                 <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/xiaochen-zhou-26b79b178/"> LinkedIn </a>
+                <a href="data/research_interest.pdf"> Research Interests </a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/xiaochen-zhou-26b79b178/"> LinkedIn </a> &nbsp/&nbsp
+                <a href="https://github.com/lewkesy"> Github </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -61,6 +63,36 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <!-- Sry for not change the function names -->
+
+          <tr onmouseout="unet_stop()" onmouseover="unet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='unet_image'><img src='images/unetIn.png'></div>
+                <img src='images/unetOut.png'>
+              </div>
+              <script type="text/javascript">
+                function unet_start() {
+                  document.getElementById('unet_image').style.opacity = "1";
+                }
+
+                function unet_stop() {
+                  document.getElementById('unet_image').style.opacity = "0";
+                }
+                unet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/lewkesy/contour2img">
+                <papertitle>Contour to Image</papertitle>
+              </a>
+              <br>
+              Implementation practice of paper <em>Smart, Sparse Contours to Represent and Edit Images</em>, 2018
+              <p></p>
+              <p>Implementation practice of paper <em>Smart, Sparse Contours to Represent and Edit Images</em>. In this project, a generative adversial network is trained to generate and edit image through contour domain, where canny edge detection is used to extract contour information through original input.</p>
+              <a href="https://github.com/lewkesy/contour2img"> Github </a>
+            </td>
+          </tr>
+
           <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -80,12 +112,14 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="data/Partial Style Transfer Network.pdf">
-                <papertitle>Partial Style Transferring and Feature Optimization for Style Transfer Network</papertitle>
+                <papertitle>Partial Harmonization Network</papertitle>
               </a>
               <br>
-              <em>Course Project in Advanced Computer Vision</em>, 2019
+              Implementation practice of paper <em>Deep Painterly Harmonization</em>, 2019
               <p></p>
-              <p>Training a neural network on style transferring and optimizing the coarse general output.</p>
+              <p>This is an implementation practice of paper <em>Deep Painterly Harmonization</em>. Training a neural network on style transferring and optimizing the coarse general output. This network allows you to copy and paste some part of image element from other image to your target image and smooth the artifacts</p>
+
+              <a href="https://github.com/lewkesy/Partial-Harmonization-Network"> Github </a>
             </td>
           </tr>
 
@@ -108,7 +142,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="data/3D Reconstruction with Single View.pdf">
-                <papertitle>Researh and Implementation on Single View 3D Reconstruction</papertitle>
+                <papertitle>Single View 3D Reconstruction</papertitle>
               </a>
               <br>
               <em>Course Project in Computer Vision</em>, 2018
@@ -150,7 +184,7 @@
           <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='mpi_image'><img src='images/calibrate.png'></div>
+                <div class="two" id='mpi_image'><img src='images/graphic.png'></div>
                 <img src='images/graphic.png'>
               </div>
               <script type="text/javascript">
