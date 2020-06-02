@@ -62,7 +62,35 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <!-- Sry for not change the function names -->
+
+          <tr onmouseout="thesis_stop()" onmouseover="thesis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='thesis_image'><img src='images/thesisIn.png'></div>
+                <img src='images/thesisOut.png'>
+              </div>
+              <script type="text/javascript">
+                function thesis_start() {
+                  document.getElementById('thesis_image').style.opacity = "1";
+                }
+
+                function thesis_stop() {
+                  document.getElementById('thesis_image').style.opacity = "0";
+                }
+                unet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/thesis.pdf">
+                <papertitle>Image Extension with Patch Matching and GAN</papertitle>
+              </a>
+              <br>
+              Master defense project, 2020
+              <p></p>
+              <p>This project is the master defense project. We firstly extract the layout of the source image with additional information. Second, the layout image is extended via optimized patch matching algorithms. Then we implemented coarse-to-fine progressive Unet GAN to reconstruct the completed image through layouts.</p>
+              <a href="data/thesis.pdf"> Thesis </a>
+            </td>
+          </tr>
 
           <tr onmouseout="unet_stop()" onmouseover="unet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
