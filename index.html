@@ -30,10 +30,10 @@
               <p style="text-align:center">
                 <name>Xiaochen Zhou</name>
               </p>
-              <p>I am a PhD student at Purdue University, where I major in computer graphics, computer vision, image processing and machine learning. I am a research assistant in <a href="https://vlg.seas.wustl.edu/">HPCG Lab</a>, advised by <a href="https://cse.wustl.edu/faculty/Pages/faculty.aspx?bio=117">Bedrich Benes</a>.
+              <p>I am a third-year PhD student at Purdue University, where I major in computer graphics, computer vision, image processing and machine learning. I am a research assistant in <a href="https://vlg.seas.wustl.edu/">HPCG Lab</a>, advised by <a href="https://cse.wustl.edu/faculty/Pages/faculty.aspx?bio=117">Bedrich Benes</a>.
               </p>
               <p>
-                I graduated from Washington University in st. Louis with a Master degree and I defensed my bachelor degree at Beihang University. I achieved an amazing internship experience in <a href="https://www.faceplusplus.com/">Megvii Face++</a>, working on vehicle re-identification. 
+                I graduated from Washington University in st. Louis with a Master degree and I defensed my bachelor degree at Beihang University. I achieved amazing internship experience in Microsoft, Meta and Megvii Face++.
                </p>
               
               <p style="text-align:center">
@@ -54,12 +54,43 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. More specifially, I'm interested in 3D reconstruction and image texuture synthesis.
+                I'm interested in computer vision, machine learning, optimization, and image processing. More specifially, I'm interested in 3D modeling and reconstruction.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="thesis_stop()" onmouseover="thesis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='brush'><img src='images/brush.png' height="180" width="180"></div>
+                <img src='images/brush.png' height="180" width="180">
+              </div>
+              <script type="text/javascript">
+                function thesis_start() {
+                  document.getElementById('brush').style.opacity = "1";
+                }
+
+                function thesis_stop() {
+                  document.getElementById('brush').style.opacity = "0";
+                }
+                unet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3472749.3474787">
+                <papertitle>Urban Brush: Intuitive and Controllable Urban Layout Editing</papertitle>
+              </a>
+              <br>
+              <strong>Xiaochen Zhou</strong>, Pascal Chang, Marie-Paule Cani, Bedrich Benes
+              <br>
+              <em>UIST</em>, 2021 &nbsp
+              <br>
+              <p></p>
+              <p>We designed a new modeling architecture for urban modeling. We provided the real-time local editing tools called atomic brushes to edit the elements of the local region in the urban city.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="thesis_stop()" onmouseover="thesis_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -116,92 +147,6 @@
               <p></p>
               <p>In this project, a generative adversial network is trained to generate and edit image through contour domain, where canny edge detection is used to extract contour information through original input.</p>
               <a href="https://github.com/lewkesy/contour2img"> Github </a>
-            </td>
-          </tr>
-
-          <tr onmouseout="canny_stop()" onmouseover="canny_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='canny'><img src='images/edge.jpg'></div>
-                <img src='images/canny.jpg'>
-              </div>
-              <script type="text/javascript">
-                function canny_start() {
-                  document.getElementById('canny').style.opacity = "1";
-                }
-
-                function canny_stop() {
-                  document.getElementById('canny').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/lewkesy/canny_edge_detector">
-                <papertitle>Canny Edge Detector</papertitle>
-              </a>
-              <br>
-              <em>Algorithms Implementation</em>, 2019
-              <p></p>
-              <p>Implemented the traditional algorithm with Python and Scipy. This algorithm will be used in edge detector task, and will be implemented in tensorflow version for contour2img task.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='porlight_image'><img src='images/result.jpg'></div>
-                <img src='images/background.jpg'>
-              </div>
-              <script type="text/javascript">
-                function porlight_start() {
-                  document.getElementById('porlight_image').style.opacity = "1";
-                }
-
-                function porlight_stop() {
-                  document.getElementById('porlight_image').style.opacity = "0";
-                }
-                porlight_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/Partial Style Transfer Network.pdf">
-                <papertitle>Partial Harmonization Network</papertitle>
-              </a>
-              <br>
-              Implementation practice of paper <em>Deep Painterly Harmonization</em>, 2019
-              <p></p>
-              <p>Training a neural network on style transferring and optimizing the coarse general output. This network allows you to copy and paste some part of image element from other image to your target image and smooth the artifacts</p>
-
-              <a href="https://github.com/lewkesy/Partial-Harmonization-Network"> Github </a>
-            </td>
-          </tr>
-
-          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/artificial.png'></div>
-                <img src='images/normal.png'>
-              </div>
-              <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
-                }
-
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/3D Reconstruction with Single View.pdf">
-                <papertitle>Single-view 3D Model Reconstruction</papertitle>
-              </a>
-              <br>
-              <em>Course Project in Computer Vision</em>, 2018
-              <p></p>
-              <p>Computing camera calibration parameters with vanishing points and reconstructing the object through search algorithm. This project is my first step to single view 3D reconstruction. Now I am playing with PointNet and point cloud SIFT algorithm.</p>
             </td>
           </tr>
           
@@ -304,11 +249,13 @@
             </td>
           </tr>
         </tbody></table>
+        
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/logo.png"></td>
             <td width="75%" valign="center">
-              <a href="https://www.cse.wustl.edu/~ayan/courses/cse559a/">TA on CSE559A: Computer Vision - Fall 2019 </a>
+              <a> Foundations Of Computer Science - Spring 2022 </a>
+              <a> Programming With Multimedia Objects - Fall 2021 </a>
+              <a href="https://www.cse.wustl.edu/~ayan/courses/cse559a/">Computer Vision - Fall 2019 </a>
               <br>
             </td>
           </tr>
