@@ -65,6 +65,39 @@
           <tr onmouseout="tree_stop()" onmouseover="tree_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <div class="two" id='tree'><img src='images/lidar.png' height="180" width="180"></div>
+                <img src='images/mesh.png' height="180" width="180">
+              </div>
+              <script type="text/javascript">
+                function tree_start() {
+                  document.getElementById('tree').style.opacity = "1";
+                }
+
+                function tree_stop() {
+                  document.getElementById('tree').style.opacity = "0";
+                }
+                tree_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2305.05153">
+                <papertitle>TreeStructor: Forest Reconstruction With Neural Ranking</papertitle>
+              </a>
+              <br>
+              <strong>Xiaochen Zhou</strong>, Bosheng Li, Bedrich Benes, Arman Habib, Songlin Fei, Jinyuan Shao, Sören Pirk
+              <br>
+              <em>IEEE Transaction of Geoscience and Remote Sensing</em>, 2025 &nbsp
+              <br>
+              <p></p>
+              <p>We introduce TreeStructor, a novel approach for isolating and reconstructing forest trees. The key novelty is a deep neural model that uses neural ranking to assign pre-generated connectable 3D geometries to a point cloud.TreeStructor outperforms the state-of-the-art reconstruction method for around 6% on quantitative metrics and 12% less error compared with QSM on low-quality scanned data.
+                <p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="tree_stop()" onmouseover="tree_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
                 <div class="two" id='tree'><img src='images/tree.png' height="180" width="180"></div>
                 <img src='images/tree_render.png' height="180" width="180">
               </div>
